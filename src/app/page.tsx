@@ -9,11 +9,12 @@ export default function Home() {
         <div className="container mx-auto px-4 py-16 relative z-10">
           <div className="text-center">
             <Image
-              src="/images/Zevation_ transparent_ background.png"
+              src="/zevation_website/images/Zevation_ transparent_ background.png"
               alt="Zevation Logo"
               width={200}
               height={200}
               className="mx-auto mb-8"
+              priority
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
               Empowering India with AI

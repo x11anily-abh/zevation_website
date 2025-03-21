@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Zevation - AI Solutions for the Developing World",
   description: "Empowering businesses in India with cutting-edge AI solutions. We specialize in custom AI development, machine learning, and data analytics.",
   icons: {
-    icon: '/images/Zevation_ transparent_ background.png',
+    icon: '/zevation_website/images/Zevation_ transparent_ background.png',
   },
 };
 
