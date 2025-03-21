@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: '/zevation_website/',
+  basePath: '/zevation_website',
 }
 
 module.exports = nextConfig
