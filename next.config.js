@@ -7,6 +7,7 @@ const nextConfig = {
   },
   assetPrefix: '/zevation_website/',
   basePath: '/zevation_website',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
