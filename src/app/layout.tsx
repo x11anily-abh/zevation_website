@@ -12,7 +12,15 @@ const rajdhani = Rajdhani({
 export const metadata: Metadata = {
   title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
   description: SITE_CONFIG.description,
-  keywords: "AI, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities",
+  keywords: "AI, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities, Zevation, AI solutions, digital transformation, tech education, AI training, career development",
+  authors: [{ name: "Zevation" }],
+  creator: "Zevation",
+  publisher: "Zevation",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
     description: SITE_CONFIG.description,
@@ -35,6 +43,20 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_CONFIG.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code', // Add your Google verification code here
   },
 };
 
