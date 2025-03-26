@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Zevation",
     images: [
       {
-        url: "/images/Zevation_transparent_background.png",
+        url: "/images/Zevation_ transparent_ background.png",
         width: 200,
         height: 200,
         alt: "Zevation Logo",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zevation - Empowering Bharat with AI",
     description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
-    images: ["/images/Zevation_transparent_background.png"],
+    images: ["/images/Zevation_ transparent_ background.png"],
   },
   alternates: {
     canonical: "https://zevation.ai",
