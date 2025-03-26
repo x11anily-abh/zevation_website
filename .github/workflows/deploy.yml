@@ -20,24 +20,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
           
       - name: Install dependencies
         run: npm ci
         
       - name: Build with Next.js
-        run: |
-          cp next.config.prod.js next.config.js
-          npm run build
-        
-      - name: List build output
-        run: ls -la out
+        run: npm run build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          retention-days: 1
 
   deploy:
     environment:
@@ -48,4 +44,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
