@@ -9,10 +9,31 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "Zevation - Empowering India with AI",
-  description: "Building AI products, platforms, and solutions to empower the developing world with a focus on India.",
-  icons: {
-    icon: "/images/Zevation_ transparent_ background.png",
+  title: "Zevation - Empowering Bharat with AI",
+  description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
+  keywords: "AI, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities",
+  openGraph: {
+    title: "Zevation - Empowering Bharat with AI",
+    description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
+    url: "https://zevation.ai",
+    siteName: "Zevation",
+    images: [
+      {
+        url: "/images/Zevation_transparent_background.png",
+        width: 200,
+        height: 200,
+        alt: "Zevation Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zevation - Empowering Bharat with AI",
+    description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
+    images: ["/images/Zevation_transparent_background.png"],
+  },
+  alternates: {
+    canonical: "https://zevation.ai",
   },
 };
 
