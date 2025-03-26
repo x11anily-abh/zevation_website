@@ -10,10 +10,10 @@ export default function Home() {
         <div className="container mx-auto px-4 py-2 relative z-10">
           <div className="text-center">
             <Image
-              src={SITE_CONFIG.images.logo.path}
-              alt={SITE_CONFIG.images.logo.alt}
-              width={SITE_CONFIG.images.logo.width}
-              height={SITE_CONFIG.images.logo.height}
+              src="/images/Zevation_transparent_background.png"
+              alt="Zevation Logo"
+              width={200}
+              height={200}
               className="mx-auto mb-3"
               priority
             />
