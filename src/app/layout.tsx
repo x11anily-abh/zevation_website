@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rajdhani = Rajdhani({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-rajdhani",
+});
 
 export const metadata: Metadata = {
-  title: "Zevation - AI Solutions for the Developing World",
-  description: "Empowering businesses in India with cutting-edge AI solutions. We specialize in custom AI development, machine learning, and data analytics.",
+  title: "Zevation - Empowering India with AI",
+  description: "Building AI products, platforms, and solutions to empower the developing world with a focus on India.",
   icons: {
-    icon: '/images/Zevation_ transparent_ background.png',
+    icon: "/images/Zevation_ transparent_ background.png",
   },
 };
 
@@ -18,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-white text-gray-900`}>
+    <html lang="en">
+      <body className={`${rajdhani.variable} font-rajdhani antialiased`}>
         {children}
       </body>
     </html>
