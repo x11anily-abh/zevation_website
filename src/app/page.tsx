@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-2 relative z-10">
           <div className="text-center">
             <Image
-              src="/images/Zevation_ transparent_ background.png"
+              src="/images/Zevation_transparent_background.png?v=1"
               alt="Zevation Logo"
               width={200}
               height={200}
