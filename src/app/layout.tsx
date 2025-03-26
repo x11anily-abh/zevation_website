@@ -10,9 +10,9 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "Zevation - AI-Powered Solutions",
-  description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
-  keywords: "AI solutions, artificial intelligence, business technology, AI consulting, machine learning, data analytics",
+  title: 'Zevation - Empowering Bharat with AI Solutions',
+  description: 'Zevation enables Bharat with knowledge, access, and AI-driven tools to overcome barriers and unlock global career opportunities. Join us in building pathways to growth and fulfillment.',
+  keywords: 'AI solutions, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities, Zevation, digital transformation, tech education, AI training, career development, global opportunities, multilingual support',
   authors: [{ name: "Zevation" }],
   creator: "Zevation",
   publisher: "Zevation",
