@@ -10,9 +10,9 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
-  description: SITE_CONFIG.description,
-  keywords: "AI, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities, Zevation, AI solutions, digital transformation, tech education, AI training, career development",
+  title: "Zevation - AI-Powered Solutions",
+  description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
+  keywords: "AI solutions, artificial intelligence, business technology, AI consulting, machine learning, data analytics",
   authors: [{ name: "Zevation" }],
   creator: "Zevation",
   publisher: "Zevation",
@@ -22,27 +22,24 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
-    description: SITE_CONFIG.description,
-    url: SITE_CONFIG.url,
-    siteName: SITE_CONFIG.name,
+    title: "Zevation - AI-Powered Solutions",
+    description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
+    url: "https://zevation.ai",
+    siteName: "Zevation",
     images: [
       {
-        url: SITE_CONFIG.images.logo.path,
-        width: SITE_CONFIG.images.logo.width,
-        height: SITE_CONFIG.images.logo.height,
-        alt: SITE_CONFIG.images.logo.alt,
+        url: "https://zevation.ai/images/Zevation_transparent_background.png",
+        width: 800,
+        height: 600,
+        alt: "Zevation Logo",
       },
     ],
   },
   twitter: {
-    card: SITE_CONFIG.social.twitter.card,
-    title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
-    description: SITE_CONFIG.description,
-    images: [SITE_CONFIG.images.logo.path],
-  },
-  alternates: {
-    canonical: SITE_CONFIG.url,
+    card: "summary_large_image",
+    title: "Zevation - AI-Powered Solutions",
+    description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
+    images: ["https://zevation.ai/images/Zevation_transparent_background.png"],
   },
   robots: {
     index: true,
@@ -56,18 +53,21 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google verification code here
+    google: "your-google-verification-code", // Add your Google verification code here
+  },
+  alternates: {
+    canonical: "https://zevation.ai",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={`${rajdhani.variable} font-rajdhani antialiased`}>
+      <body className={`${rajdhani.variable} font-rajdhani`}>
         {children}
       </body>
     </html>
