@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SITE_CONFIG } from "@/config/constants";
 
 export default function Home() {
   return (
@@ -9,10 +10,10 @@ export default function Home() {
         <div className="container mx-auto px-4 py-2 relative z-10">
           <div className="text-center">
             <Image
-              src="/images/Zevation_transparent_background.png"
-              alt="Zevation Logo"
-              width={200}
-              height={200}
+              src={SITE_CONFIG.images.logo.path}
+              alt={SITE_CONFIG.images.logo.alt}
+              width={SITE_CONFIG.images.logo.width}
+              height={SITE_CONFIG.images.logo.height}
               className="mx-auto mb-3"
               priority
             />
@@ -20,7 +21,7 @@ export default function Home() {
               Empowering Bharat with AI
             </h1>
             <p className="text-lg md:text-xl font-medium text-gray-800 mb-1 max-w-2xl mx-auto">
-              Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.
+              {SITE_CONFIG.description}
             </p>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-1 text-white">Get in Touch</h2>
           <p className="text-xl font-medium mb-1 text-white">Keen to partner with us? Contact us today</p>
-          <p className="text-xl font-medium text-white">Email us at <a href="mailto:contact@zevation.ai" className="underline hover:text-gray-100">contact@zevation.ai</a></p>
+          <p className="text-xl font-medium text-white">Email us at <a href={`mailto:${SITE_CONFIG.email}`} className="underline hover:text-gray-100">{SITE_CONFIG.email}</a></p>
         </div>
       </section>
     </main>

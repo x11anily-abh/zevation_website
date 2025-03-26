@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
+import { SITE_CONFIG } from "@/config/constants";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -9,31 +10,31 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "Zevation - Empowering Bharat with AI",
-  description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
+  title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
+  description: SITE_CONFIG.description,
   keywords: "AI, artificial intelligence, Bharat, India, technology, innovation, skilling, AI tools, career opportunities",
   openGraph: {
-    title: "Zevation - Empowering Bharat with AI",
-    description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
-    url: "https://zevation.ai",
-    siteName: "Zevation",
+    title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    siteName: SITE_CONFIG.name,
     images: [
       {
-        url: "/images/Zevation_transparent_background.png",
-        width: 200,
-        height: 200,
-        alt: "Zevation Logo",
+        url: SITE_CONFIG.images.logo.path,
+        width: SITE_CONFIG.images.logo.width,
+        height: SITE_CONFIG.images.logo.height,
+        alt: SITE_CONFIG.images.logo.alt,
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Zevation - Empowering Bharat with AI",
-    description: "Building AI products, platforms, and solutions to empower the developing world with a focus on Bharat.",
-    images: ["/images/Zevation_transparent_background.png"],
+    card: SITE_CONFIG.social.twitter.card,
+    title: `${SITE_CONFIG.name} - Empowering Bharat with AI`,
+    description: SITE_CONFIG.description,
+    images: [SITE_CONFIG.images.logo.path],
   },
   alternates: {
-    canonical: "https://zevation.ai",
+    canonical: SITE_CONFIG.url,
   },
 };
 
