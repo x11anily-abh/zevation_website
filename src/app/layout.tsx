@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     siteName: 'Zevation',
     images: [
       {
-        url: 'https://zevation.ai/images/Zevation_transparent_background.png',
-        width: 800,
-        height: 600,
-        alt: 'Zevation Logo',
+        url: 'https://zevation.ai/images/social/social-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zevation - Empowering Bharat with AI Solutions',
         type: 'image/png',
       },
     ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zevation - Empowering Bharat with AI Solutions',
     description: 'Zevation enables Bharat with knowledge, access, and AI-driven tools to overcome barriers and unlock global career opportunities. Join us in building pathways to growth and fulfillment.',
-    images: ['https://zevation.ai/images/Zevation_transparent_background.png'],
+    images: ['https://zevation.ai/images/social/social-preview.png'],
     creator: '@zevation',
   },
   robots: {
