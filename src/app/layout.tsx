@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
 import { SITE_CONFIG } from "@/config/constants";
+import Script from 'next/script';
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -72,6 +73,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Zevation",
+              "url": "https://zevation.ai",
+              "logo": "https://zevation.ai/images/social/social-preview.png",
+              "description": "Zevation enables Bharat with knowledge, access, and AI-driven tools to overcome barriers and unlock global career opportunities.",
+              "sameAs": [
+                "https://www.linkedin.com/company/zevation",
+                "https://twitter.com/zevation"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "contact@zevation.ai"
+              }
+            })
+          }}
+        />
+      </head>
       <body className={`${rajdhani.variable} font-rajdhani`}>
         {children}
       </body>
