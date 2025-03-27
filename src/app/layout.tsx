@@ -97,6 +97,37 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 "contactType": "customer service",
                 "email": "contact@zevation.ai"
+              },
+              "foundingDate": "2024",
+              "areaServed": "IN",
+              "knowsAbout": [
+                "Artificial Intelligence",
+                "Career Development",
+                "Digital Transformation",
+                "Technology Education",
+                "Global Opportunities"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "AI Solutions",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI Training",
+                      "description": "Empowering individuals with cutting-edge AI skills and knowledge"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Career Development",
+                      "description": "Building pathways to global career opportunities"
+                    }
+                  }
+                ]
               }
             })
           }}
