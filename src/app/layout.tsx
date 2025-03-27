@@ -21,25 +21,30 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  metadataBase: new URL('https://zevation.ai'),
   openGraph: {
-    title: "Zevation - AI-Powered Solutions",
-    description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
-    url: "https://zevation.ai",
-    siteName: "Zevation",
+    title: 'Zevation - Empowering Bharat with AI Solutions',
+    description: 'Zevation enables Bharat with knowledge, access, and AI-driven tools to overcome barriers and unlock global career opportunities. Join us in building pathways to growth and fulfillment.',
+    url: 'https://zevation.ai',
+    siteName: 'Zevation',
     images: [
       {
-        url: "https://zevation.ai/images/Zevation_transparent_background.png",
+        url: 'https://zevation.ai/images/Zevation_transparent_background.png',
         width: 800,
         height: 600,
-        alt: "Zevation Logo",
+        alt: 'Zevation Logo',
+        type: 'image/png',
       },
     ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Zevation - AI-Powered Solutions",
-    description: "Zevation provides cutting-edge AI solutions for businesses. Transform your operations with our innovative technology and expert services.",
-    images: ["https://zevation.ai/images/Zevation_transparent_background.png"],
+    card: 'summary_large_image',
+    title: 'Zevation - Empowering Bharat with AI Solutions',
+    description: 'Zevation enables Bharat with knowledge, access, and AI-driven tools to overcome barriers and unlock global career opportunities. Join us in building pathways to growth and fulfillment.',
+    images: ['https://zevation.ai/images/Zevation_transparent_background.png'],
+    creator: '@zevation',
   },
   robots: {
     index: true,
@@ -53,10 +58,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Add your Google verification code here
+    google: 'your-google-verification-code', // Add your Google verification code here
   },
   alternates: {
-    canonical: "https://zevation.ai",
+    canonical: 'https://zevation.ai',
   },
 };
 
