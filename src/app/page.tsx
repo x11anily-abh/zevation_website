@@ -5,25 +5,21 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[45vh] flex items-center justify-center bg-gradient-to-b from-white to-orange-50">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-        <div className="container mx-auto px-4 py-2 relative z-10">
-          <div className="text-center">
-            <Image
-              src="/images/Zevation_transparent_background.png"
-              alt="Zevation Logo"
-              width={200}
-              height={200}
-              className="mx-auto mb-3"
-              priority
-            />
-            <h1 className="text-3xl md:text-4xl font-bold mb-1 gradient-text">
-              Empowering Bharat with AI
-            </h1>
-            <p className="text-lg md:text-xl font-medium text-gray-800 mb-1 max-w-2xl mx-auto">
-              {SITE_CONFIG.description}
-            </p>
-          </div>
+      <section className="py-12 px-4 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <Image
+            src={SITE_CONFIG.images.logo.path}
+            alt={SITE_CONFIG.images.logo.alt}
+            width={200}
+            height={200}
+            className="mx-auto mb-3"
+          />
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Breaking Barriers, Building Futures
+          </h1>
+          <p className="text-base md:text-lg text-gray-800 font-medium">
+            Empowering Bharat with knowledge, access, and AI-driven tools to unlock global career opportunities.
+          </p>
         </div>
       </section>
 
@@ -67,22 +63,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-4 bg-gradient-to-br from-zevation-orange to-zevation-orange-light">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-1 text-white">Get in Touch</h2>
-          <p className="text-xl font-medium mb-1 text-white">Keen to partner with us? Contact us today</p>
-          <p className="text-xl font-medium text-white">Email us at <a href={`mailto:${SITE_CONFIG.email}`} className="underline hover:text-gray-100">{SITE_CONFIG.email}</a></p>
-        </div>
-      </section>
-
-      {/* New Section */}
-      <section className="py-12 px-4 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Breaking Barriers, Building Futures
-          </h1>
-          <p className="text-base md:text-lg text-gray-800 font-medium">
-            Empowering Bharat with knowledge, access, and AI-driven tools to unlock global career opportunities.
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p className="text-lg text-gray-800 font-medium">
+            Ready to break barriers and build your future? Contact us at{" "}
+            <a href={`mailto:${SITE_CONFIG.email}`} className="text-zevation-orange hover:underline">
+              {SITE_CONFIG.email}
+            </a>
           </p>
         </div>
       </section>
