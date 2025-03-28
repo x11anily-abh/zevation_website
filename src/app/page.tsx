@@ -74,6 +74,18 @@ export default function Home() {
           <p className="text-xl font-medium text-white">Email us at <a href={`mailto:${SITE_CONFIG.email}`} className="underline hover:text-gray-100">{SITE_CONFIG.email}</a></p>
         </div>
       </section>
+
+      {/* New Section */}
+      <section className="py-12 px-4 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Breaking Barriers, Building Futures
+          </h1>
+          <p className="text-base md:text-lg text-gray-800 font-medium">
+            Empowering Bharat with knowledge, access, and AI-driven tools to unlock global career opportunities.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
