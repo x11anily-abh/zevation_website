@@ -67,7 +67,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
           <p className="text-xl text-gray-900 font-semibold">
-            Ready to break barriers and build your future? Contact us at{" "}
+            Keen to partner with us? Contact us at{" "}
             <a href={`mailto:${SITE_CONFIG.email}`} className="text-zevation-orange hover:underline">
               {SITE_CONFIG.email}
             </a>
