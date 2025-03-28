@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Breaking Barriers, Building Futures
           </h1>
-          <p className="text-base md:text-lg text-gray-800 font-medium">
+          <p className="text-lg md:text-xl text-gray-900 font-semibold">
             Empowering Bharat with knowledge, access, and AI-driven tools to unlock global career opportunities.
           </p>
         </div>
@@ -35,8 +35,8 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-0.5 text-gray-900">Awareness</h3>
-              <p className="text-lg font-medium text-gray-800">Enabling Bharat with Knowledge & Access</p>
-              <p className="text-sm font-medium text-gray-800 mt-1">Delivering targeted, multilingual information through preferred channels to raise awareness about global career opportunities and their requirements.</p>
+              <p className="text-xl font-semibold text-gray-900">Enabling Bharat with Knowledge & Access</p>
+              <p className="text-base font-medium text-gray-900 mt-1">Delivering targeted, multilingual information through preferred channels to raise awareness about global career opportunities and their requirements.</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100">
               <div className="text-zevation-orange mb-1">
@@ -45,8 +45,8 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-0.5 text-gray-900">Empowerment Tools</h3>
-              <p className="text-lg font-medium text-gray-800">Removing Barriers, Unlocking Potential</p>
-              <p className="text-sm font-medium text-gray-800 mt-1">Equipping Bharat with AI-driven tools to overcome challenges in skills, language, culture, societal norms, and financial limitations, ensuring an equal playing field.</p>
+              <p className="text-xl font-semibold text-gray-900">Removing Barriers, Unlocking Potential</p>
+              <p className="text-base font-medium text-gray-900 mt-1">Equipping Bharat with AI-driven tools to overcome challenges in skills, language, culture, societal norms, and financial limitations, ensuring an equal playing field.</p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100">
               <div className="text-zevation-orange mb-1">
@@ -55,8 +55,8 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-0.5 text-gray-900">Rewarding Careers</h3>
-              <p className="text-lg font-medium text-gray-800">Building Pathways to Growth & Fulfillment</p>
-              <p className="text-sm font-medium text-gray-800 mt-1">Providing direct access to global opportunities and enabling career growth through skill development and mentorship.</p>
+              <p className="text-xl font-semibold text-gray-900">Building Pathways to Growth & Fulfillment</p>
+              <p className="text-base font-medium text-gray-900 mt-1">Providing direct access to global opportunities and enabling career growth through skill development and mentorship.</p>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
       <section className="py-12 px-4 bg-gradient-to-b from-white to-orange-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-          <p className="text-lg text-gray-800 font-medium">
+          <p className="text-xl text-gray-900 font-semibold">
             Ready to break barriers and build your future? Contact us at{" "}
             <a href={`mailto:${SITE_CONFIG.email}`} className="text-zevation-orange hover:underline">
               {SITE_CONFIG.email}
