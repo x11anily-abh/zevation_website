@@ -64,6 +64,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://zevation.ai',
   },
+  icons: {
+    icon: [
+      { url: '/images/social/social-preview.png', type: 'image/png' },
+    ],
+  },
+  other: {
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:type': 'image/png',
+  },
 };
 
 export default function RootLayout({
